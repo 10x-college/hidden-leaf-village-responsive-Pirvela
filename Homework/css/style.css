@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #ff6b1a;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  gap: 20px;
+}
+
+.main-header .main-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.main-img img {
+  width: 24px;
+  height: 20px;
+}
+
+.main-img h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.main-header p {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 100%;
+  text-align: center;
+  opacity: 90%;
+}
+
+.burger-menu {
+  display: flex;
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+  height: 70px;
+}
+
+.burger-menu .burger-menu-wrap {
+  display: none;
+}
+
+.orange-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background-color: #ff6b1a;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  border-radius: 8px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 375px;
+  background-image: url(/Homework/assets/images/g3173.png);
+  background-color: #2a2a2ae5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  text-align: center;
+  color: white;
+  gap: 20px;
+}
+
+.banner h1 {
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.ninja-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-top: 5px solid #ff6b1a;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  height: 100%;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.cards p {
+  color: #666666;
+  line-height: 1.6;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.card-title img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: white;
+  font-family: "Inter", sans-serif;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  height: 90px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .burger-menu .burger-menu-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger-menu .burger-menu-wrap a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger-menu .burger-menu-wrap a:nth-child(2) {
+    width: 103px;
+    height: 37px;
+    opacity: 1;
+    border-radius: 8px;
+    background: #ff6b1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger-menu .orange-button {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 530px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-text p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    background-image: url(/Homework/assets/images/g3173.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .ninja-card {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 60px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .cards {
+    flex: 0 0 calc((100% - 30px) / 3);
+  }
+}
